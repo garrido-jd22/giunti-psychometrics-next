@@ -2,7 +2,7 @@
 
 import { useId, useRef } from "react";
 import Link from "next/link";
-import { ShoppingBag, X } from "lucide-react";
+import { ArrowRight, ShoppingBag, X } from "lucide-react";
 import { useCart } from "@/hooks/use-cart";
 import { useDrawer } from "@/hooks/use-drawer";
 import { cart } from "@/lib/services/cart.service";
@@ -87,6 +87,21 @@ export default function CartDrawer() {
                                 <span className="text-[22px] font-bold text-[#1B4F8A] dark:text-[#0EA5E9]">
                                     {formatEuro(total)}
                                 </span>
+                            </div>
+                            <div className="mt-5 flex flex-col gap-2.5">
+                                <button
+                                    type="button"
+                                    className="inline-flex items-center justify-center gap-2 h-12 rounded-full text-[15.5px] font-semibold text-white bg-[#1B4F8A] hover:bg-[#0EA5E9] shadow-sm transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0EA5E9] focus-visible:ring-offset-2 dark:focus-visible:ring-offset-[#091526]"
+                                >
+                                    Procedi all&apos;acquisto
+                                    <ArrowRight aria-hidden="true" className="w-4 h-4" />
+                                </button>
+                                <button
+                                    type="button"
+                                    className="inline-flex items-center justify-center h-12 rounded-full text-[15.5px] font-semibold text-[#1B4F8A] dark:text-[#EFF6FF] border border-[#1B4F8A]/25 dark:border-[#EFF6FF]/20 hover:bg-[#1B4F8A]/5 dark:hover:bg-[#EFF6FF]/5 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0EA5E9]"
+                                >
+                                    Verifica il carrello
+                                </button>
                             </div>
                         </footer>
                     </>

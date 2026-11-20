@@ -3,12 +3,12 @@ import { HERO_FEATURES } from "@/lib/data/hero-features";
 import HeroFeatures from "./hero-features";
 
 export default function Hero() {
-    // Filas auto/1fr/1fr: el video cubre 1-2 y las tarjetas 2-3, quedando mitad encima.
+    // Desktop: el video cubre las filas 1-2 y las tarjetas 2-3 (mitad encima). Mobile/tablet: sin superponer.
     return (
         <section className="relative grid grid-cols-1 grid-rows-[auto_1fr_1fr] bg-white dark:bg-[#091526] transition-colors duration-300">
             <div
                 aria-hidden="true"
-                className="col-start-1 row-start-1 row-end-3 relative overflow-hidden rounded-b-[30px] bg-[#EFF6FF] dark:bg-[#091526] transition-colors duration-300"
+                className="col-start-1 row-start-1 row-end-2 lg:row-end-3 relative overflow-hidden rounded-b-[30px] bg-[#EFF6FF] dark:bg-[#091526] transition-colors duration-300"
             >
                 <video
                     autoPlay
@@ -59,7 +59,7 @@ export default function Hero() {
                 </div>
             </div>
 
-            <div className="col-start-1 row-start-2 row-end-4 relative z-20 px-4 sm:px-6">
+            <div className="col-start-1 row-start-2 row-end-4 relative z-20 mt-6 sm:mt-8 lg:mt-0 px-4 sm:px-6">
                 <HeroFeatures features={HERO_FEATURES} />
             </div>
         </section>
