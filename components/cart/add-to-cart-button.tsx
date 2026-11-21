@@ -35,11 +35,11 @@ export default function AddToCartButton({ product, variant = "pill" }: AddToCart
         <button
             type="button"
             onClick={handleClick}
-            aria-label={variant === "icon" ? `Aggiungi ${product.title} al carrello` : undefined}
+            aria-label={variant === "icon" ? `Aggiungere ${product.title}` : undefined}
             className={`${base} ${variants[variant]}`}
         >
             <ShoppingCart aria-hidden="true" className="w-4 h-4" strokeWidth={variant === "icon" ? 1.8 : 2} />
-            {variant !== "icon" && "Aggiungi al carrello"}
+            {variant !== "icon" && "Aggiungere"}
         </button>
     );
 }
