@@ -41,14 +41,12 @@ export default function Hero() {
                 </div>
 
                 <h1 className="text-4xl sm:text-6xl md:text-[68px] font-medium tracking-[-0.03em] leading-[1.08] text-[#0F2D52] dark:text-[#EFF6FF] mb-5 motion-safe:animate-fade-down motion-safe:[animation-delay:120ms]">
-                    MCMI-IV:
-                    Millon Clinical Multiaxial Inventory-IV
+                    Inventario di Valutazione Clinica e della Personalità
                 </h1>
 
                 <p className="max-w-[640px] mx-auto mb-5 text-[17px] sm:text-[18px] text-[#0F2D52]/85 dark:text-[#EFF6FF]/85 motion-safe:animate-fade-up motion-safe:[animation-delay:300ms]">
-                    Disponibile la nuova edizione del questionario per la valutazione clinica della personalità e della psicopatologia negli adulti
+                    Disponibile la nuova edizione del questionario per la valutazione clinica della personalità e della psicopatologia negli adulti.
                 </p>
-
                 <div className="mt-1 motion-safe:animate-fade-up motion-safe:[animation-delay:450ms]">
                     <Link
                         href="/products"
